@@ -35,7 +35,7 @@ var __importStar = (this && this.__importStar) || (function () {
 Object.defineProperty(exports, "__esModule", { value: true });
 const mongoose_1 = __importStar(require("mongoose"));
 const ordenDetallePlatilloSchema = new mongoose_1.Schema({
-    idSuborden: { type: mongoose_1.Schema.Types.ObjectId, ref: 'Suborden', required: true },
+    _id: { type: String, ref: 'Suborden', required: true },
     idPlatillo: { type: Number, required: true },
     nombrePlatillo: { type: String, required: true, trim: true },
     idGuiso: { type: Number, required: true },

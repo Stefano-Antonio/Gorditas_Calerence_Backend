@@ -1,9 +1,9 @@
 import mongoose, { Document } from 'mongoose';
 import { IProducto } from '../types';
-export interface IProductoDocument extends IProducto, Document {
+export interface IProductoDocument extends Omit<IProducto, '_id'>, Document {
 }
 declare const _default: mongoose.Model<IProductoDocument, {}, {}, {}, mongoose.Document<unknown, {}, IProductoDocument, {}, {}> & IProductoDocument & Required<{
-    _id: number;
+    _id: unknown;
 }> & {
     __v: number;
 }, any>;

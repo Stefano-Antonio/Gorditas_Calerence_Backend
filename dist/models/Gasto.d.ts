@@ -1,9 +1,9 @@
 import mongoose, { Document } from 'mongoose';
 import { IGasto } from '../types';
-export interface IGastoDocument extends IGasto, Document {
+export interface IGastoDocument extends Omit<IGasto, '_id'>, Document {
 }
 declare const _default: mongoose.Model<IGastoDocument, {}, {}, {}, mongoose.Document<unknown, {}, IGastoDocument, {}, {}> & IGastoDocument & Required<{
-    _id: string;
+    _id: unknown;
 }> & {
     __v: number;
 }, any>;

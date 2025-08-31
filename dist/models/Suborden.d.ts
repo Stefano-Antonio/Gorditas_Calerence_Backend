@@ -1,9 +1,9 @@
 import mongoose, { Document } from 'mongoose';
 import { ISuborden } from '../types';
-export interface ISubordenDocument extends ISuborden, Document {
+export interface ISubordenDocument extends Omit<ISuborden, '_id'>, Document {
 }
 declare const _default: mongoose.Model<ISubordenDocument, {}, {}, {}, mongoose.Document<unknown, {}, ISubordenDocument, {}, {}> & ISubordenDocument & Required<{
-    _id: string;
+    _id: unknown;
 }> & {
     __v: number;
 }, any>;

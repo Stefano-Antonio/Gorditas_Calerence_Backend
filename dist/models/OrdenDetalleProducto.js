@@ -35,7 +35,7 @@ var __importStar = (this && this.__importStar) || (function () {
 Object.defineProperty(exports, "__esModule", { value: true });
 const mongoose_1 = __importStar(require("mongoose"));
 const ordenDetalleProductoSchema = new mongoose_1.Schema({
-    idOrden: { type: mongoose_1.Schema.Types.ObjectId, ref: 'Orden', required: true },
+    _id: { type: String, ref: 'Orden', required: true },
     idProducto: { type: Number, required: true },
     nombreProducto: { type: String, required: true, trim: true },
     costoProducto: { type: Number, required: true, min: 0 },

@@ -1,6 +1,7 @@
 import mongoose, { Document } from 'mongoose';
 import { ITipoPlatillo } from '../types';
 export interface ITipoPlatilloDocument extends ITipoPlatillo, Document {
+    _id: number;
 }
 declare const _default: mongoose.Model<ITipoPlatilloDocument, {}, {}, {}, mongoose.Document<unknown, {}, ITipoPlatilloDocument, {}, {}> & ITipoPlatilloDocument & Required<{
     _id: number;

@@ -29,12 +29,11 @@ app.use((0, morgan_1.default)('combined'));
 app.use(express_1.default.json({ limit: '10mb' }));
 app.use(express_1.default.urlencoded({ extended: true }));
 // Routes
-const apiVersion = process.env.API_VERSION || 'v1';
-app.use(`/api/${apiVersion}/auth`, auth_1.default);
-app.use(`/api/${apiVersion}/ordenes`, ordenes_1.default);
-app.use(`/api/${apiVersion}/inventario`, inventario_1.default);
-app.use(`/api/${apiVersion}/reportes`, reportes_1.default);
-app.use(`/api/${apiVersion}/catalogos`, catalogos_1.default);
+app.use('/api/auth', auth_1.default);
+app.use('/api/ordenes', ordenes_1.default);
+app.use('/api/inventario', inventario_1.default);
+app.use('/api/reportes', reportes_1.default);
+app.use('/api/catalogos', catalogos_1.default);
 // Health check
 app.get('/health', (req, res) => {
     res.status(200).json({
@@ -47,8 +46,8 @@ app.get('/health', (req, res) => {
 app.use(notFound_1.notFound);
 app.use(errorHandler_1.errorHandler);
 app.listen(PORT, () => {
-    console.log(`🚀 Server running on port ${PORT}`);
-    console.log(`📖 API documentation available at http://localhost:${PORT}/api/${apiVersion}`);
+    console.log(`Server running on port ${PORT}`);
+    console.log(`API documentation available at http://localhost:${PORT}/api/auth`);
 });
 exports.default = app;
 //# sourceMappingURL=server.js.map

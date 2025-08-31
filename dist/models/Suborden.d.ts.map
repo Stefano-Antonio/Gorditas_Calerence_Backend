@@ -1,1 +1,1 @@
-{"version":3,"file":"Suborden.d.ts","sourceRoot":"","sources":["../../src/models/Suborden.ts"],"names":[],"mappings":"AAAA,OAAO,QAAQ,EAAE,EAAE,QAAQ,EAAU,MAAM,UAAU,CAAC;AACtD,OAAO,EAAE,SAAS,EAAE,MAAM,UAAU,CAAC;AAErC,MAAM,WAAW,iBAAkB,SAAQ,SAAS,EAAE,QAAQ;CAAG;;;;;;AAYjE,wBAA6E"}
+{"version":3,"file":"Suborden.d.ts","sourceRoot":"","sources":["../../src/models/Suborden.ts"],"names":[],"mappings":"AAAA,OAAO,QAAQ,EAAE,EAAE,QAAQ,EAAU,MAAM,UAAU,CAAC;AACtD,OAAO,EAAE,SAAS,EAAE,MAAM,UAAU,CAAC;AAErC,MAAM,WAAW,iBAAkB,SAAQ,IAAI,CAAC,SAAS,EAAE,KAAK,CAAC,EAAE,QAAQ;CAAG;;;;;;AAY9E,wBAA6E"}

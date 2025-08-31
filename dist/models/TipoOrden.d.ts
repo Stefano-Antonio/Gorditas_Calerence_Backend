@@ -1,9 +1,9 @@
 import mongoose, { Document } from 'mongoose';
 import { ITipoOrden } from '../types';
-export interface ITipoOrdenDocument extends ITipoOrden, Document {
+export interface ITipoOrdenDocument extends Omit<ITipoOrden, '_id'>, Document {
 }
 declare const _default: mongoose.Model<ITipoOrdenDocument, {}, {}, {}, mongoose.Document<unknown, {}, ITipoOrdenDocument, {}, {}> & ITipoOrdenDocument & Required<{
-    _id: number;
+    _id: unknown;
 }> & {
     __v: number;
 }, any>;
