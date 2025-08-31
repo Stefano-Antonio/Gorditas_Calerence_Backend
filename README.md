@@ -73,31 +73,49 @@ src/
 - `GET /api/v1/auth/profile` - Obtener perfil del usuario
 
 ### Órdenes
-- `GET /api/v1/ordenes` - Listar órdenes
-- `POST /api/v1/ordenes/nueva` - Crear nueva orden
-- `POST /api/v1/ordenes/:id/suborden` - Agregar suborden
-- `POST /api/v1/ordenes/suborden/:id/platillo` - Agregar platillo
-- `POST /api/v1/ordenes/:id/producto` - Agregar producto
-- `PUT /api/v1/ordenes/:id/estatus` - Cambiar estatus
+- `GET /api/ordenes` - Listar órdenes
+- `POST /api/ordenes/nueva` - Crear nueva orden
+- `GET /api/ordenes/:id/detalle` - Obtener detalle completo de orden
+- `POST /api/ordenes/:id/suborden` - Agregar suborden
+- `POST /api/ordenes/suborden/:id/platillo` - Agregar platillo a suborden
+- `POST /api/ordenes/:id/producto` - Agregar producto a orden
+- `PUT /api/ordenes/:id/estatus` - Cambiar estatus de orden
+- `PUT /api/ordenes/:id/producto/:idProducto` - Actualizar cantidad de producto
+- `PUT /api/ordenes/suborden/:id/platillo/:idPlatillo` - Actualizar cantidad de platillo
+- `DELETE /api/ordenes/:id/producto/:idProducto` - Eliminar producto de orden
+- `DELETE /api/ordenes/suborden/:id/platillo/:idPlatillo` - Eliminar platillo de suborden
+- `PUT /api/ordenes/:id/producto/:idProducto/entregar` - Marcar producto como entregado
+- `GET /api/ordenes/:id/productos-pendientes` - Obtener productos pendientes
+- `GET /api/ordenes/:id/factura` - Obtener orden para facturación
+- `POST /api/ordenes/:id/finalizar` - Finalizar orden (cobrar)
 
 ### Inventario
-- `GET /api/v1/inventario` - Consultar inventario
-- `POST /api/v1/inventario/recibir` - Recibir productos
-- `PUT /api/v1/inventario/ajustar/:id` - Ajustar inventario
+- `GET /api/inventario` - Consultar inventario
+- `POST /api/inventario/recibir` - Recibir productos
+- `PUT /api/inventario/ajustar/:id` - Ajustar inventario
+
+### Gastos
+- `GET /api/gastos` - Listar gastos
+- `POST /api/gastos` - Crear gasto
+- `GET /api/gastos/:id` - Obtener gasto por ID
+- `PUT /api/gastos/:id` - Actualizar gasto
+- `DELETE /api/gastos/:id` - Eliminar gasto
 
 ### Reportes
-- `GET /api/v1/reportes/ventas` - Reporte de ventas
-- `GET /api/v1/reportes/inventario` - Reporte de inventario
-- `GET /api/v1/reportes/gastos` - Reporte de gastos
-- `GET /api/v1/reportes/productos-vendidos` - Productos más vendidos
+- `GET /api/reportes/ventas` - Reporte de ventas
+- `GET /api/reportes/inventario` - Reporte de inventario
+- `GET /api/reportes/gastos` - Reporte de gastos
+- `GET /api/reportes/productos-vendidos` - Productos más vendidos
 
 ### Catálogos (CRUD)
-- `GET /api/v1/catalogos/{modelo}` - Listar
-- `POST /api/v1/catalogos/{modelo}` - Crear
-- `PUT /api/v1/catalogos/{modelo}/:id` - Actualizar
-- `DELETE /api/v1/catalogos/{modelo}/:id` - Eliminar
+- `GET /api/catalogos/{modelo}` - Listar
+- `POST /api/catalogos/{modelo}` - Crear
+- `PUT /api/catalogos/{modelo}/:id` - Actualizar
+- `DELETE /api/catalogos/{modelo}/:id` - Eliminar
 
 **Modelos disponibles**: `guiso`, `tipoproducto`, `producto`, `tipoplatillo`, `platillo`, `tipousuario`, `usuario`, `tipoorden`, `mesa`, `tipogasto`
+
+> 📖 **Documentación completa de API**: Ver [API_ROUTES.md](./API_ROUTES.md) para documentación detallada de todas las rutas, parámetros y ejemplos de uso.
 
 ## 🔒 Roles y Permisos
 
