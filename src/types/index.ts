@@ -131,7 +131,8 @@ export enum UserRole {
 export enum OrdenStatus {
   RECEPCION = 'Recepcion',
   PREPARACION = 'Preparacion',
-  LISTO = 'Listo',
+  SURTIDA = 'Surtida',
   ENTREGADO = 'Entregado',
+  FINALIZADA = 'Finalizada',
   CANCELADO = 'Cancelado'
 }

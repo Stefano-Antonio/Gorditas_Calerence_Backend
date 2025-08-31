@@ -15,6 +15,7 @@ import ordenesRoutes from './routes/ordenes';
 import inventarioRoutes from './routes/inventario';
 import reportesRoutes from './routes/reportes';
 import catalogosRoutes from './routes/catalogos';
+import gastosRoutes from './routes/gastos';
 import Mesa from '../src/models/Mesa'; // Ajusta la ruta si es necesario
 import Orden from '../src/models/Orden'; // Ajusta la ruta si es necesario
 dotenv.config();
@@ -42,6 +43,7 @@ app.use('/api/ordenes', ordenesRoutes);
 app.use('/api/inventario', inventarioRoutes);
 app.use('/api/reportes', reportesRoutes);
 app.use('/api/catalogos', catalogosRoutes);
+app.use('/api/gastos', gastosRoutes);
 
 // Health check
 app.get('/health', (req, res) => {
