@@ -1,1 +1,1 @@
-{"version":3,"file":"TipoPlatillo.d.ts","sourceRoot":"","sources":["../../src/models/TipoPlatillo.ts"],"names":[],"mappings":"AAAA,OAAO,QAAQ,EAAE,EAAE,QAAQ,EAAU,MAAM,UAAU,CAAC;AACtD,OAAO,EAAE,aAAa,EAAE,MAAM,UAAU,CAAC;AAEzC,MAAM,WAAW,qBAAsB,SAAQ,aAAa,EAAE,QAAQ;CAAG;;;;;;AAezE,wBAAyF"}
+{"version":3,"file":"TipoPlatillo.d.ts","sourceRoot":"","sources":["../../src/models/TipoPlatillo.ts"],"names":[],"mappings":"AAAA,OAAiB,EAAE,QAAQ,EAAU,MAAM,UAAU,CAAC;AACtD,OAAO,EAAE,aAAa,EAAE,MAAM,UAAU,CAAC;AAEzC,MAAM,WAAW,qBAAsB,SAAQ,aAAa,EAAE,QAAQ;IACpE,GAAG,EAAE,MAAM,CAAC;CACb;;AAeD,wBAAyF"}

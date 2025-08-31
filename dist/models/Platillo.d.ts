@@ -1,11 +1,7 @@
-import mongoose, { Document } from 'mongoose';
+import { Document } from 'mongoose';
 import { IPlatillo } from '../types';
-export interface IPlatilloDocument extends IPlatillo, Document {
+export interface IPlatilloDocument extends Omit<IPlatillo, '_id'>, Document {
 }
-declare const _default: mongoose.Model<IPlatilloDocument, {}, {}, {}, mongoose.Document<unknown, {}, IPlatilloDocument, {}, {}> & IPlatilloDocument & Required<{
-    _id: number;
-}> & {
-    __v: number;
-}, any>;
+declare const _default: any;
 export default _default;
 //# sourceMappingURL=Platillo.d.ts.map

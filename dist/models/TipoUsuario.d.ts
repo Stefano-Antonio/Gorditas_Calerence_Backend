@@ -1,11 +1,8 @@
-import mongoose, { Document } from 'mongoose';
+import { Document } from 'mongoose';
 import { ITipoUsuario } from '../types';
-export interface ITipoUsuarioDocument extends ITipoUsuario, Document {
-}
-declare const _default: mongoose.Model<ITipoUsuarioDocument, {}, {}, {}, mongoose.Document<unknown, {}, ITipoUsuarioDocument, {}, {}> & ITipoUsuarioDocument & Required<{
+export interface ITipoUsuarioDocument extends Omit<ITipoUsuario, '_id'>, Document {
     _id: number;
-}> & {
-    __v: number;
-}, any>;
+}
+declare const _default: any;
 export default _default;
 //# sourceMappingURL=TipoUsuario.d.ts.map

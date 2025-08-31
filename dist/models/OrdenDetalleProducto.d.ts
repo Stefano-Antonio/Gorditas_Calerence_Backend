@@ -1,11 +1,7 @@
-import mongoose, { Document } from 'mongoose';
+import { Document } from 'mongoose';
 import { IOrdenDetalleProducto } from '../types';
-export interface IOrdenDetalleProductoDocument extends IOrdenDetalleProducto, Document {
+export interface IOrdenDetalleProductoDocument extends Document, Omit<IOrdenDetalleProducto, '_id'> {
 }
-declare const _default: mongoose.Model<IOrdenDetalleProductoDocument, {}, {}, {}, mongoose.Document<unknown, {}, IOrdenDetalleProductoDocument, {}, {}> & IOrdenDetalleProductoDocument & Required<{
-    _id: string;
-}> & {
-    __v: number;
-}, any>;
+declare const _default: any;
 export default _default;
 //# sourceMappingURL=OrdenDetalleProducto.d.ts.map

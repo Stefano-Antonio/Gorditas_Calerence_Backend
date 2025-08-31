@@ -1,11 +1,7 @@
-import mongoose, { Document } from 'mongoose';
+import { Document } from 'mongoose';
 import { IProducto } from '../types';
-export interface IProductoDocument extends IProducto, Document {
+export interface IProductoDocument extends Omit<IProducto, '_id'>, Document {
 }
-declare const _default: mongoose.Model<IProductoDocument, {}, {}, {}, mongoose.Document<unknown, {}, IProductoDocument, {}, {}> & IProductoDocument & Required<{
-    _id: number;
-}> & {
-    __v: number;
-}, any>;
+declare const _default: any;
 export default _default;
 //# sourceMappingURL=Producto.d.ts.map

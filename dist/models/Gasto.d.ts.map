@@ -1,1 +1,1 @@
-{"version":3,"file":"Gasto.d.ts","sourceRoot":"","sources":["../../src/models/Gasto.ts"],"names":[],"mappings":"AAAA,OAAO,QAAQ,EAAE,EAAE,QAAQ,EAAU,MAAM,UAAU,CAAC;AACtD,OAAO,EAAE,MAAM,EAAE,MAAM,UAAU,CAAC;AAElC,MAAM,WAAW,cAAe,SAAQ,MAAM,EAAE,QAAQ;CAAG;;;;;;AAe3D,wBAAoE"}
+{"version":3,"file":"Gasto.d.ts","sourceRoot":"","sources":["../../src/models/Gasto.ts"],"names":[],"mappings":"AAAA,OAAiB,EAAE,QAAQ,EAAU,MAAM,UAAU,CAAC;AACtD,OAAO,EAAE,MAAM,EAAE,MAAM,UAAU,CAAC;AAElC,MAAM,WAAW,cAAe,SAAQ,IAAI,CAAC,MAAM,EAAE,KAAK,CAAC,EAAE,QAAQ;CAAG;;AAexE,wBAAoE"}
